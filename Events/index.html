@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+  }
 
-    <link rel="stylesheet" href="style.css">
-    <title>Harry</title>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    float: left;
+    width:  60%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #2f4f4f;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .grid-item:hover {
+  transform: scale(0.963); /* Increase the scale to make it grow */
+ }   
+
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    width:  90%;
+    height: 90%;
+    object-fit: cover;
+    
+  }
+
+  .grid-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+
+  .grid-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  @media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+    }}
+
+</style>
+<title>Image Grid with Text</title>
 </head>
-
 <body>
-
-<div class="container">
-
-    <div class="sector">
-        <div class="image">
-            <img src="wds_image.png" alt="Image">
-        </div>
-        <div class="description">
-            <p>“KNOW WHAT YOU OWN, AND KNOW WHY YOU OWN IT.” - PETER LYNCH
-                VENTURE INTO THE ARENA OF STOCK EXCHANGE, PUT ON YOUR THINKING CAPS AND GET READY TO MINT MONEY.
-                ECON IS BACK WITH ITS FLAGSHIP EVENT “WOLF OF DALAL STREET” .
-            </p>
-        </div>
+  <div class="grid-container">
+    <div class="grid-item">
+      <!-- <h3>Image 1</h3> -->
+      <img src="wds_image.png" alt="Image 1">
+      <!-- <p>Description for Image 1</p> -->
     </div>
-    <div class="sector">
-        <div class="image">
-            <img src="iplposter2.png" alt="Image">
-        </div>
-        <div class="description">
-            <p>“GOING ONCE, GOING TWICE. SOLD!”
-                “IT IS SAID THAT THE TWO BEST WORDS IN ENGLISH ARE BIDDING AND WAR”
-                JOIN US FOR THE MOST AWAITED EVENT OF THE YEAR, 'THE IPL AUCTION’ .
-            </p>
-        </div>
+    <div class="grid-item">
+      <!-- <h3>Image 2</h3> -->
+      <img src="iplposter2.png" alt="Image 2">
+      <!-- <p>Description for Image 2</p> -->
     </div>
-
-    <div class="sector">
-        <div class="image">
-            <img src="strategem.png" alt="Image">
-        </div>
-        <div class="description">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, quia.
-
-            </p>
-        </div>
+    <div class="grid-item">
+      <!-- <h3>Image 3</h3> -->
+      <img src="strategem.png" alt="Image 3">
+      <!-- <p>Description for Image 3</p> -->
     </div>
-
-    <div class="sector">
-        <div class="image">
-            <img src="uefa.jpeg" alt="Image">
-        </div>
-        <div class="description">
-            <p>UEFA AUCTION
-                Want to experience the rush and take your favourite players in your club?
-                ECON Club brings you another bustling event "The UEFA Champions League Auction" 🔥
-            </p>
-        </div>
+    <div class="grid-item">
+      <!-- <h3>Image 4</h3> -->
+      <img src="uefa.jpeg" alt="Image 4">
+      <!-- <p>Description for Image 4</p> -->
     </div>
-  
-
-
-</div>
-
+  </div>
 </body>
 </html>
