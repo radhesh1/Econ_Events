@@ -1,73 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="styles.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #000000;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    float: left;
-    width:  60%;
-    height: 60%;
-    object-fit: cover;
-  }
-
-  .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    background-color: #2f4f4f;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .grid-item:hover {
-  transform: scale(0.963); /* Increase the scale to make it grow */
- }   
-
-  .grid-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    width:  90%;
-    height: 90%;
-    object-fit: cover;
-    
-  }
-
-  .grid-item h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #ffffff;
-  }
-
-  .grid-item p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #ffffff;
-  }
-  @media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 0.5fr 3fr;
-        padding-top: 3.5rem;
-    }}
-
+  
 </style>
 <title>Image Grid with Text</title>
 </head>
